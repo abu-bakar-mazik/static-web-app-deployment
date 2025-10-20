@@ -1,0 +1,43 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
+option {
+  color: black;
+}
+* {
+  scrollbar-color: rgba(29, 81, 141, 0) transparent;
+  scrollbar-width: thin;
+}
+*:hover {
+  scrollbar-color: rgba(98, 184, 244, 0.7) transparent;
+}
+*::-webkit-scrollbar {
+  border-radius: 0;
+  width: 4px;
+  height: 4px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+  box-shadow: none;
+  border-radius: 10px;
+  margin: 0;
+}
+*::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgba(29, 81, 141, 0);
+}
+*:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(98, 184, 244, 0.7);
+}
+
+.sectionBG {
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+/* [data-expanded], [data-state="expanded"] {
+  background: initial
+} */
+
+*:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
