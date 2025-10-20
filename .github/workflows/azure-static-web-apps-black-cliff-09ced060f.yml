@@ -9,6 +9,14 @@ on:
     branches:
       - main
 
+env:
+  NEXT_PUBLIC_API_BASE_URL: "https://dev-uks-webapp-authcontract-backend-dhezfde0azfzhbhg.uksouth-01.azurewebsites.net"
+  NEXT_PUBLIC_AZURE_CLIENT_ID: "94a05d5a-51ac-4bc2-884f-5ef3211752b1"
+  NEXT_PUBLIC_AZURE_REDIRECT_URI: "https://black-ground-0c4528a03.4.azurestaticapps.net/auth/callback"
+  NEXT_PUBLIC_AZURE_TENANT_ID: "cb8d0f5e-295e-44f1-8cab-184ae827c864"
+  NEXT_PUBLIC_AZURE_AUTHORIZE_URL: "https://login.microsoftonline.com/cb8d0f5e-295e-44f1-8cab-184ae827c864/oauth2/v2.0/authorize"
+  NEXT_PUBLIC_AZURE_SCOPE: "email openid profile offline_access https://graph.microsoft.com/.default"
+
 jobs:
   build_and_deploy_job:
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
